@@ -8,8 +8,8 @@ param = sys.argv[1]
 def get_http_header_field_value(header, field):
     field_start = header.find(field)
     field_end = header.find('\r\n', field_start)
-    # this assumes, per the book, that there is a space between the field
-    # name and value
+    # this assumes that there is a space between the
+    # field name and value
     field_value_start = field_start + len(field) + 2
     field_value = header[field_value_start : field_end]
     return field_value
@@ -49,8 +49,8 @@ def client(raw_url, redirect_counter):
     clientSocket.connect((host_without_port,port))
     clientSocket.sendall(message)
     response = recvall(clientSocket)
-    # Per the Piazza post, I tried to use the Content-Length header field
-    # to know how many bytes to recv, but this was just not feasible
+    # TODO to use the Content-Length header field
+    # to know how many bytes to recv
     #content_length = int(get_http_header_field_value(response, "Content-Length"))
     #response = clientSocket.recv(content_length)
     clientSocket.close()
