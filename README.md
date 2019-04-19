@@ -7,7 +7,9 @@ Takes one parameter: an http web address to fetch.
 
 Example:
 
-```$ python http_client.py http://www.catb.org/esr/faqs/hacker-howto.html
+```
+$ python http_client.py http://www.catb.org/esr/faqs/hacker-howto.html
+```
 
 A port number may also be included after the URL preceded by a colon, as in: http://portquiz.net:8080/
 
