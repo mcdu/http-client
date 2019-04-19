@@ -11,7 +11,7 @@ $ python http_client.py http://www.catb.org/esr/faqs/hacker-howto.html
 
 A port number may also be included after the URL preceded by a colon, as in: http://portquiz.net:8080/
 
-If successful (eventually gets "200 OK" response), returns exit code 0 and prints the body of the response (html code) to stdout.
+If successful (eventually gets "200 OK" response), returns exit code 0 and prints response body (html code) to stdout.
 
 # Restrictions:
 
